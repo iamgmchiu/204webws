@@ -1,0 +1,22 @@
+<HTML>
+   <HEAD>
+      <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+      <TITLE>Search Job Form</TITLE>
+   </HEAD>
+   <BODY BGCOLOR="#FDF5E6">
+   <H1>Search Job</H1>
+
+  <FORM ACTION="./SearchJobServlet" method="post">
+  Technology <input type="text" name="searchingstring" value="java"><BR><BR>
+  State <select name="state" size="5" multiple>
+          <option value="NJ">New Jersey</option>
+          <option value="NY">New York</option>
+          <option value="KS">Kansas</option>
+          <option value="CA">Califonia</option>
+          <option value="TX">Texas</option>
+        </select>
+    <BR><BR>
+    <INPUT TYPE="SUBMIT" value="Search Job"> 
+  </FORM>
+   </BODY>
+</HTML>

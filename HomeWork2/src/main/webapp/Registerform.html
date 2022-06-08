@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+    <form action="./RegisterFormServlet" method="post">
+        <div>姓名:</div>
+        <div><input type="text" name="account" id="account" autofocus placeholder="王小明" autocomplete="off" size="10">
+        </div>
+        <div>畢業學校</div>
+        <div><input type="text" name="school" id="school" autofocus placeholder="國王學院" autocomplete="off" size="10">
+        </div>
+        <div>畢業科系</div>
+        <div><input type="text" name="department" id="department" autofocus placeholder="資訊工程學系" autocomplete="off"
+                size="10"></div>
+        <div>性別:</div>
+        <div>
+            <input type="radio" name="gender" value="男生" id=""><div>男性</div>
+        </div>
+
+        <div>
+            <input type="radio" name="gender" value="女生" id=""><div>女性</div><br>
+        </div>
+        <div>交通工具:</div>
+        <input type="checkbox" name="transportation" value="腳踏車" id="">
+        <div>腳踏車</div>
+        <input type="checkbox" name="transportation" value="汽車" id="">
+        <div>汽車</div>
+        <input type="checkbox" name="transportation" value="火車" id="">
+        <div>火車</div>
+        <div><input type="submit" value="送出"></div>
+    </form>
+</body>
+
+</html>

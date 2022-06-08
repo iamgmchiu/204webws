@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Get Employee Information</title>
+</head>
+<body>
+ <form method=GET action="./GetEmpInfoServlet">
+   The query is <br>
+   SELECT ENAME, EMPNO FROM EMP WHERE ENAME LIKE ?.,<p>
+   Enter the WHERE clause ? parameter (use % for wildcards).<br>
+   Example: 'S%' :<br>
+   <input type=TEXT name="queryVal">
+   <p>
+   <input type=SUBMIT value="Send Info">
+   </form>
+</body>
+</html>
