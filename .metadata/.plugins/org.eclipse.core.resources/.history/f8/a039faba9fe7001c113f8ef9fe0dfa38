@@ -33,14 +33,6 @@
           </map>
        </property>
     </bean>
-    
-    <bean id="fordTruck" factory-bean="truckBeanFactory" factory-method="getTurckBean">
-       <constructor-arg value="5"/>
-    </bean>
-    
-    <bean id="benzTruck" factory-bean="truckBeanFactory" factory-method="getTurckBean">
-       <constructor-arg value="6"/>
-    </bean>
 
     <bean id="date1" class="java.util.Date"/>
 
