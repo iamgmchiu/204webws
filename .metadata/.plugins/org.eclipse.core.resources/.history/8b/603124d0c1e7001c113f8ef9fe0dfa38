@@ -1,0 +1,21 @@
+package tw.leonchen.action;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import tw.leonchen.model.TreeBean;
+
+public class DemoTreeBeanAction {
+
+	public static void main(String[] args) {
+
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.config.xml");
+		
+		TreeBean treeBean=context.getBean("treeBean", TreeBean.class);
+		System.out.println("Name"+treeBean.getName());
+		System.out.println("Age"+treeBean.getAge());
+		
+		
+		context.close();
+	}
+
+}

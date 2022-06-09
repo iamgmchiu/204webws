@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+	<context:component-scan
+		base-package="tw.leonchen" />
+
+
+	<bean id="props"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="location">
+			<value>classpath:tree.properties</value>
+		</property>
+	</bean>
+
+
+	<bean id="worker1" class="tw.leonchen.model.Worker">
+		<property name="id" value="101" />
+		<property name="name" value="louis" />
+		<property name="title" value="engineer" />
+	</bean>
+
+	<bean id="worker2" class="tw.leonchen.model.Worker" p:id="102"
+		p:name="janet" p:title="manager" />
+
+
+	<bean id="nissanTruck"
+		class="tw.leonchen.model.TruckBeanStaticFactory"
+		factory-method="getTruckBean">
+		<constructor-arg value="1" />
+	</bean>
+
+	<bean id="truckBeanFactory"
+		class="tw.leonchen.model.TruckBeanFactory">
+		<property name="map">
+			<map>
+
+				<entry key="5">
+
+					<bean class="tw.leonchen.model.TruckBean">
+						<property name="id" value="7" />
+						<property name="brand" value="ford" />
+					</bean>
+
+				</entry>
+
+				<entry key="6">
+
+					<bean class="tw.leonchen.model.TruckBean">
+						<property name="id" value="8" />
+						<property name="brand" value="mercedes-benz" />
+					</bean>
+
+				</entry>
+
+			</map>
+		</property>
+	</bean>
+
+	<bean id="fordTruck" factory-bean="truckBeanFactory"
+		factory-method="getTurckBean">
+		<constructor-arg value="5" />
+	</bean>
+
+	<bean id="benzTruck" factory-bean="truckBeanFactory"
+		factory-method="getTurckBean">
+		<constructor-arg value="6" />
+	</bean>
+
+	<bean id="date1" class="java.util.Date" />
+
+	<bean id="person2" class="tw.leonchen.model.Person">
+		<property name="date" ref="date1" />
+	</bean>
+
+	<bean id="person3" class="tw.leonchen.model.Person"
+		p:date-ref="date1" p:id="1002" p:name="john" p:age="25" />
+
+	<bean id="person1" class="tw.leonchen.model.Person">
+		<constructor-arg index="0" value="1001" />
+		<constructor-arg index="1" value="mary" />
+		<constructor-arg index="2" value="18" />
+	</bean>
+
+	<!-- LogProvider logProvider = new LogProvider(); -->
+	<bean id="logProvider" class="tw.leonchen.util.LogProvider"  scope="singleton"/>
+
+	<!-- constructor Dependency Injection -->
+	<!-- String string0 = new String("information"); -->
+	<bean id="string0" name="string1, string2"
+		class="java.lang.String">
+		<constructor-arg value="information" />
+	</bean>
+
+	<!-- LoginDao loginDao = new LoginDao(); -->
+	<bean id="loginDao" class="tw.leonchen.model.LoginDao" />
+
+	<!-- LoginService loginService1 = new LoginService(loginDao); -->
+	<bean id="loginService1" class="tw.leonchen.model.LoginService">
+		<constructor-arg ref="loginDao" />
+	</bean>
+
+	<!-- LoginService loginService2 = new LoginService(); -->
+	<!-- loginService2.setLoginDao(loginDao); -->
+	<bean id="loginService2" class="tw.leonchen.model.LoginService">
+		<property name="loginDao" ref="loginDao" />
+	</bean>
+</beans>

@@ -1,0 +1,19 @@
+package tw.leonchen.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import tw.leonchen.model.Room;
+
+@Configuration
+public class SpringJavaConfig {
+
+	public Room room1() {
+		
+		Room r1=new Room();
+		r1.setId(1);
+		r1.setName("livivng room");
+		r1.setSize("medium");
+		return r1;
+	}
+	
+}
