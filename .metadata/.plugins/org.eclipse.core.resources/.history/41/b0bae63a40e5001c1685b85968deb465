@@ -1,0 +1,43 @@
+function checkInterviewForm() {
+	let checkResult = true;
+
+	let postDate = new Date($("#intTime").val());
+    let nowDate = new Date();
+    if (postDate > nowDate) {
+		alert("\"面試日期\"不可超過今日");
+        checkResult = false;
+    }
+	return checkResult;
+ } 
+
+
+$('#wrongInput').click(function() {
+	$('#compid').val('A7654321')
+	$('#compwd').val('abc123zzz')
+	$('#corpname').val('咻咻股份有限公司')
+	$('#owner').val('林禹咻')
+	$('#industry').val('服務業')
+	$('#contact').val('唐洋基')
+	$('#comptele').val('02-87654321')
+	$('#fax').val('07-1325462')
+	$('#compaddress').val('新北市土城工業區26號')
+	$('#empnumber').val('300人')
+	$('#website').val('www.giigle.com')
+	$('#capital').val('1200萬')
+
+})
+
+$('#correctInput').click(function() {
+	$('#compid').val('87654321')
+	$('#compwd').val('abc123zzz')
+	$('#corpname').val('咻咻股份有限公司')
+	$('#owner').val('林禹咻')
+	$('#industry').val('服務業')
+	$('#contact').val('唐洋基')
+	$('#comptele').val('02-87654321')
+	$('#fax').val('07-1325462')
+	$('#compaddress').val('新北市土城工業區26號')
+	$('#empnumber').val('300')
+	$('#website').val('www.giigle.com')
+	$('#capital').val('1200萬')
+})

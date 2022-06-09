@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!-- LogProvider logProvider = new LogProvider(); -->
+	<bean id="logProvider" class="tw.leonchen.util.LogProvider"/>
+	
+	<!-- constructor Dependency Injection -->
+	<!-- String string0 = new String("information"); -->
+	<bean id="string0" name="string1, string2" class="java.lang.String">
+	   <constructor-arg value="information"/>
+	</bean>
+	<bean id="loginDao" class="tw.leochen.model.LoginDao"/>

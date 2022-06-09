@@ -1,0 +1,18 @@
+package tw.leonchen.action;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import tw.leonchen.model.LoginDao;
+
+public class DemoLoginAction {
+
+	public static void main(String[] args) {
+		
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.config.xml");
+		LoginDao loginDao=context.getBean("loginDao",LoginDao.class);
+		boolean status1=loginDao.checkLogin("john", "test123");
+		System.out.println("status1"+status1);
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package tw.iamgmchiu.action;
+
+public class DemoLogProviderAction {
+
+}

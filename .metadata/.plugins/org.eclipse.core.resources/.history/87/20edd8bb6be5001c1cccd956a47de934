@@ -1,0 +1,24 @@
+function checkInterviewForm() {
+	let checkResult = true;
+
+	let postDate = new Date($("#intTime").val());
+	let nowDate = new Date();
+	if (postDate > nowDate) {
+		Swal.fire('Warning!',
+		'面試日期不可超過今日!',	'warning');
+		checkResult = false;
+	
+	}
+	
+	let userID = /^[A-Z]{1}[1-2]{1}\d{8}$/;
+	if (!userID.test($("#userId").val())) {
+		Swal.fire('Warning!',
+			'身分證格式錯誤!',
+			'warning');
+		checkResult = false;
+	
+	}return checkResult;
+}
+
+
+

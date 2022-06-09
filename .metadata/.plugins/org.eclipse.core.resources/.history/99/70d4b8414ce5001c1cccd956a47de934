@@ -1,0 +1,120 @@
+<%@ page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="Bean.Interview"%>
+<%@ page import="java.util.List"%>
+
+
+<%@include file="DashBoardHeader.jspf"%>
+
+<!-- Content Start -->
+
+<body>
+
+	<div class="container-fluid pt-4 px-4">
+		<div class="col-sm-12 col-xl-10">
+			<div class="bg-light rounded h-100 p-4">
+				<h6 class="mb-4">新增紀錄</h6>
+				<form action="./InterViewServletDS" method="post" onsubmit="return checkInterviewForm()">
+					
+					<div class="row mb-3">
+						<label class="col-sm-2 col-form-label">求職者帳號</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" name="userId" required
+								id="userId"> <input type="hidden" class="form-control"
+								name="cvno" value="0">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label class="col-sm-2 col-form-label">面試時間</label>
+						<div class="col-sm-8">
+							<input type="date" class="form-control" name="intTime" required>
+							<input type="hidden" class="form-control" name="createdTime">
+						</div>
+					</div>
+
+
+
+					<div class="row mb-3">
+						<label class="col-sm-2 col-form-label">面試公司</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" name="compName"
+								size="10">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label class="col-sm-2 col-form-label">面試職缺</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" name="jobName"
+								maxlength="8" required id="jobName" size="10">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label class="col-sm-2 col-form-label">是否錄取</label>
+
+						<div class="col-sm-8">
+							<input type="radio" name="offer" value="是">是 <input
+								type="radio" name="offer" value="否">否
+						</div>
+					</div>
+
+
+
+					<div class="row mb-3">
+						<label class="col-sm-2 col-form-label">筆試或口試</label>
+						<div class="col-sm-8">
+							<input type="radio" name="test" value="有" id="test">有 <input
+								type="radio" name="test" value="無" id="test">無
+						</div>
+					</div>
+
+
+					<div class="row mb-3">
+						<label class="col-sm-2 col-form-label">考官問題</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" placeholder="備註最多50字"
+								id="floatingTextarea" style="height: 150px;" name="qA"
+								maxlength="50"></textarea>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label class="col-sm-2 col-form-label">心得分享</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" placeholder="備註最多100字"
+								id="floatingTextarea" style="height: 150px;" name="share"
+								maxlength="100"></textarea>
+						</div>
+					</div>
+
+					
+
+
+					<div class="row mb-3">
+						<label class="col-sm-2 col-form-label">給該公司評分</label>
+						<div class="col-sm-8">
+							<input type="radio" name="compScore" value="1" >1
+							<input type="radio" name="compScore" value="2" >2
+							<input type="radio" name="compScore" value="3" >3
+							<input type="radio" name="compScore" value="4" >4
+							<input type="radio" name="compScore" value="5" >5
+							<input type="radio" name="compScore" value="6" >6
+							<input type="radio" name="compScore" value="7" >7
+							<input type="radio" name="compScore" value="8" >8
+							<input type="radio" name="compScore" value="9" >9
+							<input type="radio" name="compScore" value="10" >10
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary" name="create" id=insert
+						value="confirm">確認新增</button>
+					<button type="button" class="btn btn-primary"
+						onclick="location.href='./InterViewServletDS'">取消</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<!-- Content End -->
+
+<%@include file="DashBoardFooter.jspf"%>

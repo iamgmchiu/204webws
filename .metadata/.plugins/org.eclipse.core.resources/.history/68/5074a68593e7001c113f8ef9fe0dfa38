@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="person1" class="tw.leonchen.model.Person">
+  <constructor-arg index="0" value="1001"></constructor-arg>
+  <constructor-arg index="1" value="mary"></constructor-arg>
+  <constructor-arg index="2" value="18"></constructor-arg>
+  </bean>
+  
+  <bean id="date1" class="java.util.Date"></bean>
+  
+  
+  <bean id="person2" class="tw.leonchen.model.Person">
+  	<property name="date" ref="date1"></property>
+  
+  </bean>
+  
+  
+  
+  
+  <!-- LogProvider logProvider = new LogProvider(); -->
+	<bean id="logProvider" class="tw.leonchen.util.LogProvider"/>
+	
+	<!-- constructor Dependency Injection -->
+	<!-- String string0 = new String("information"); -->
+	<bean id="string0" name="string1, string2" class="java.lang.String">
+	   <constructor-arg value="information"/>
+	</bean>
+	
+	<!-- LoginDao loginDao = new LoginDao(); -->
+	<bean id="loginDao" class="tw.leonchen.model.LoginDao"/>
+	
+	<!-- LoginService loginService1 = new LoginService(loginDao); -->
+	<bean id="loginService1" class="tw.leonchen.model.LoginService">
+	   <constructor-arg ref="loginDao"/>
+	</bean>
+	
+	<!-- LoginService loginService2 = new LoginService(); -->
+	<!-- loginService2.setLoginDao(loginDao); -->
+	<bean id="loginService2" class="tw.leonchen.model.LoginService">
+	   <property name="loginDao" ref="loginDao"/>
+	</bean>
+	
+	
+	
+</beans>

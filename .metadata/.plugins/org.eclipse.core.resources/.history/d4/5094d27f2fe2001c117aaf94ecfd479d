@@ -1,0 +1,37 @@
+
+package Bean;
+
+import java.io.*;
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+public class Interview implements Serializable {
+
+	private Integer cvNo;
+	private java.sql.Timestamp createdTime;
+	private Date intTime;
+	private String compName;
+	private String jobName;
+	private String offer;
+	private String test;
+	
+	private String QA;
+	private String share;
+	private int compScore;
+	private String userId;
+
+	public Interview() {
+		
+	}
+
+
+	
+	
+
+
+
+	
+
+}

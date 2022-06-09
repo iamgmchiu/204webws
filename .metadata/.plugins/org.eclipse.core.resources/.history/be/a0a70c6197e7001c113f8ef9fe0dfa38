@@ -1,0 +1,9 @@
+package tw.leonchen.model;
+
+public class TruckBean {
+
+	public TruckBean() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

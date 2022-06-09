@@ -1,0 +1,5 @@
+package tw.iamgmchiu.util;
+
+public class LogProvider {
+
+}

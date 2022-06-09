@@ -1,0 +1,6 @@
+127.0.0.1 - - [10/May/2022:10:01:28 +0800] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [10/May/2022:10:01:28 +0800] "GET /sqlwebdemo/DeptFormDS.html HTTP/1.1" 200 489
+0:0:0:0:0:0:0:1 - - [10/May/2022:10:01:28 +0800] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [10/May/2022:10:01:41 +0800] "GET /sqlwebdemo/DeptServletDS?deptno=20&dname=&QUERY=QUERY HTTP/1.1" 200 447
+127.0.0.1 - - [10/May/2022:10:29:34 +0800] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [10/May/2022:10:29:36 +0800] "GET /ebookshop/queryTest.jsp HTTP/1.1" 200 818

@@ -1,0 +1,5 @@
+package tw.leonchen.util;
+
+public class LogProvider {
+
+}

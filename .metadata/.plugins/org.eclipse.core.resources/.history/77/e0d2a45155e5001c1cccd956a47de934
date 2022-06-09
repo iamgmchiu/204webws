@@ -1,0 +1,15 @@
+function checkInterviewForm() {
+	let checkResult = true;
+
+	let postDate = new Date($("#intTime").val());
+	let nowDate = new Date();
+	if (postDate > nowDate) {
+		alert("\"面試日期\"不可超過今日");
+		checkResult = false;
+
+		return checkResult;
+	}
+}
+
+
+

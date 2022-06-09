@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- 1. SQL方言與提供連結資料庫所需資訊(透過JDBC API來連結)之設定方式 -->
+		<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+		<property name="connection.url">jdbc:sqlserver://127.0.0.1:1433;DatabaseName=FindJob</property>
+		<property name="connection.username">sa</property>
+		<property name="connection.password">passw0rd</property>
+		<!-- SQL方言 -->
+		<property name="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</property>
+		<!-- 2. 其他與資料存取有關的設定 -->
+		<!-- 自動產生資料庫的Schema -->
+		<property name="hbm2ddl.auto">update</property>
+		<!-- 顯示實際操作資料庫時的SQL -->
+		<property name="show_sql">true</property>
+		<!-- 將顯示的SQL排版，方便觀看 -->
+		<property name="format_sql">true</property>
+		<property name="current_session_context_class">thread</property>
+
+		<!-- 定義程式交易管理的類型，本範例使用JDBC Transaction -->
+		<property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+		<!-- hibernate 相關效能設定 -->
+		<property name="bytecode.use_reflection_optimizer">false</property>
+		<property name="connection_pool_size">5</property>
+
+		<!-- 3. 宣告程式使用的永續類別 -->
+		<mapping class="Bean.EventBean" />
+		<mapping class="Bean.Order" />
+		<mapping class="Bean.CommentBean" />
+		<mapping class="Bean.Interview" />
+		<mapping class="Bean.Member" />
+		<mapping class="Bean.Resume" />
+		<mapping class="Bean.Job" />
+		<mapping class="Bean.Company" />
+		<mapping class="Bean.CourseBean" />
+		
+	</session-factory>
+</hibernate-configuration>

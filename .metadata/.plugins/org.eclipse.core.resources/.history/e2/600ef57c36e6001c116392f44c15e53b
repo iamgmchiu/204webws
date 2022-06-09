@@ -1,0 +1,9 @@
+package tw.leonchen.model;
+
+public class LoginService {
+
+	public LoginService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

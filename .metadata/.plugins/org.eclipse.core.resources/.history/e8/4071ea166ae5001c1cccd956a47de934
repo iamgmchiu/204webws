@@ -1,0 +1,16 @@
+function checkInterviewForm() {
+	let checkResult = true;
+
+	let postDate = new Date($("#intTime").val());
+	let nowDate = new Date();
+	if (postDate > nowDate) {
+		Swal.fire('Warning!',
+		'面試日期不可超過今日!',	'warning');
+		checkResult = false;
+
+	}
+		return checkResult;
+}
+
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="minedemo.InterviewDao"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="minedemo.Interview"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="DAO.impl.InterviewDaoImpl"/>
+    <fullyQualifiedTypeName name="DAO.InterviewDao"/>
+    <fullyQualifiedTypeName name="Service.Impl.InterviewServiceImpl"/>
+    <fullyQualifiedTypeName name="Service.InterviewService"/>
+    <fullyQualifiedTypeName name="Bean.Interview"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,57 @@
+function checkCompanyForm() {
+	let checkResult = true;
+
+	let checkJobForm = true;
+	let compIdRegex = /^\d{8}$/;
+	if (!compIdRegex.test($("#compid").val())) {
+		Swal.fire('Warning!',
+			'統編為8個數字!',
+			'warning');
+		checkJobForm = false;
+		return checkJobForm;
+	}
+
+	let EmpNumRegex = /^\d+$/;
+	if (!EmpNumRegex.test($("#empnumber").val())) {
+		Swal.fire('Warning!',
+			'員工人數只能輸入阿拉伯整數!',
+			'warning');
+		checkResult = false;
+		return checkResult;
+	}
+
+	return checkResult;
+
+}
+
+
+$('#wrongInput').click(function() {
+	$('#compid').val('A7654321')
+	$('#compwd').val('abc123zzz')
+	$('#corpname').val('咻咻股份有限公司')
+	$('#owner').val('林禹咻')
+	$('#industry').val('服務業')
+	$('#contact').val('唐洋基')
+	$('#comptele').val('02-87654321')
+	$('#fax').val('07-1325462')
+	$('#compaddress').val('新北市土城工業區26號')
+	$('#empnumber').val('300人')
+	$('#website').val('www.giigle.com')
+	$('#capital').val('1200萬')
+
+})
+
+$('#correctInput').click(function() {
+	$('#compid').val('87654321')
+	$('#compwd').val('abc123zzz')
+	$('#corpname').val('咻咻股份有限公司')
+	$('#owner').val('林禹咻')
+	$('#industry').val('服務業')
+	$('#contact').val('唐洋基')
+	$('#comptele').val('02-87654321')
+	$('#fax').val('07-1325462')
+	$('#compaddress').val('新北市土城工業區26號')
+	$('#empnumber').val('300')
+	$('#website').val('www.giigle.com')
+	$('#capital').val('1200萬')
+})
