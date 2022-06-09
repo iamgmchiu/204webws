@@ -1,0 +1,10 @@
+package tw.leonchen.action;
+
+public class DemoTruckBeanAction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
