@@ -1,0 +1,11 @@
+package tw.leonchen.model;
+
+public class FruitService {
+
+	private FruitDao fruitDao;
+	public void showInfo() {
+		fruitDao.showInfo();
+	}
+	
+	
+}

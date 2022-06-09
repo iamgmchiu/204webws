@@ -1,0 +1,22 @@
+package tw.leonchen.model;
+
+public class WorkerDao {
+	private Worker worker;
+	public WorkerDao(Worker worker) {
+		super();
+		this.worker = worker;
+	}
+
+
+	public WorkerDao() {
+	}
+
+	public void printDetails() {
+		System.out.println("ID:"+worker.getId());
+		System.out.println("Nane:"+worker.getName());
+		System.out.println("Title:"+worker.getTitle());
+		
+		
+	}
+	
+}
