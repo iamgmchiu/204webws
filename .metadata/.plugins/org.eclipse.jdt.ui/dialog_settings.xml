@@ -39,8 +39,8 @@
 		<item key="RemoveFinal" value="false"/>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="394"/>
-		<item key="DIALOG_Y_ORIGIN" value="24"/>
+		<item key="DIALOG_X_ORIGIN" value="20"/>
+		<item key="DIALOG_Y_ORIGIN" value="-76"/>
 		<item key="DIALOG_WIDTH" value="687"/>
 		<item key="DIALOG_HEIGHT" value="854"/>
 		<item key="DIALOG_FONT_NAME" value="1|Microsoft JhengHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft JhengHei UI"/>
@@ -55,7 +55,7 @@
 		<item key="OmitCallToSuper" value="false"/>
 	</section>
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="1054"/>
+		<item key="DIALOG_X_ORIGIN" value="395"/>
 		<item key="DIALOG_Y_ORIGIN" value="63"/>
 		<item key="DIALOG_WIDTH" value="672"/>
 		<item key="DIALOG_HEIGHT" value="835"/>

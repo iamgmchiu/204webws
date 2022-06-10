@@ -5,7 +5,35 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-06-07T12:00:00Z</updated>
+  <updated>2022-06-09T15:00:00Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Kubernetes legend and friend Cora Iberkleid on Tanzu, Cartographer, and more</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/06/09/a-bootiful-podcast-kubernetes-legend-and-friend-cora-iberkleid-on-tanzu-cartographer-and-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-06-09:4822</id>
+    <updated>2022-06-09T15:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Kubernetes legend and fellow Tanzu Developer Advocate &lt;a href="https://twitter.com/ciberkleid"&gt;Cora Iberkleid (@ciberkleid)&lt;/a&gt; about Kubernetes and Cartographer supply chains&lt;/p&gt;
+&lt;iframe title="Kubernetes legend and friend Cora Iberkleid on Tanzu, Cartographer, and more " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=eevfu-124764e-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Shell 2.1.0-M5 is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/06/09/spring-shell-2-1-0-m5-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Janne Valkealahti</name>
+    </author>
+    <id>tag:spring.io,2022-06-09:4821</id>
+    <updated>2022-06-09T10:34:17Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Shell &lt;code&gt;2.1.0-M5&lt;/code&gt; has been released and is now available from &lt;a href="https://repo.spring.io/milestone"&gt;https://repo.spring.io/milestone&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please see the &lt;a href="https://github.com/spring-projects/spring-shell/releases/tag/v2.1.0-M5"&gt;release notes&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-shell/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-shell"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-shell/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-shell/docs/2.1.0-M4/site/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - June 7th, 2022</title>
     <link rel="alternate" href="https://spring.io/blog/2022/06/07/this-week-in-spring-june-7th-2022" />
@@ -857,56 +885,6 @@ Details of commercial support can be found at &lt;a href="https://tanzu.vmware.c
     <updated>2022-05-19T12:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Devoxx UK organizer and Voxxed Days cofounder &lt;a href="https://twitter.com/mrhazell"&gt;Mark Hazell (@mrhazell)&lt;/a&gt;.&lt;/p&gt;
 &lt;iframe title="Devoxx UK organizer and VoxxedDays cofounder Mark Hazel on running great conferences " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=6he9e-122da12-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.6.8 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/05/19/spring-boot-2-6-8-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2022-05-19:4800</id>
-    <updated>2022-05-19T11:19:36Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot &lt;code&gt;2.6.8&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
-&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.6.8"&gt;35 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.6.8/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for GraphQL 1.0 Release</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/05/19/spring-for-graphql-1-0-release" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Rossen Stoyanchev</name>
-    </author>
-    <id>tag:spring.io,2022-05-19:4799</id>
-    <updated>2022-05-19T10:56:00Z</updated>
-    <content type="html">&lt;p&gt;&lt;img align="left" width="100" height="100" src="https://raw.githubusercontent.com/spring-projects/spring-graphql/main/spring-graphql-docs/src/docs/spring-graphql.svg"&gt; On behalf of the Spring for GraphQL team and every contributor, it is my pleasure to announce the &lt;a href="https://github.com/spring-projects/spring-graphql/releases/tag/v1.0.0"&gt;1.0 GA release&lt;/a&gt;. It&amp;rsquo;s been 10 months since the project was &lt;a href="https://spring.io/blog/2021/07/06/hello-spring-graphql"&gt;announced&lt;/a&gt; and under 2 years since the &lt;a href="https://github.com/spring-projects/spring-graphql/commit/6b4aeb074e6ac14cb92d4211f13e7376f71684e0"&gt;first commit&lt;/a&gt;, unremarkably called &amp;ldquo;first commit&amp;rdquo;. The project began with the modest goal to replace the (now archived) minimal &lt;a href="https://github.com/graphql-java/graphql-java-spring"&gt;GraphQL Java Spring&lt;/a&gt; integration, but has since moved significantly beyond through community feedback and collaboration across Spring Boot, Spring Framework, Spring Data, and Spring Security. &lt;/p&gt;
-&lt;p&gt;The following are highlights from the release:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Annotation-based programming model for data fetchers&lt;/li&gt;
-  &lt;li&gt;Data binding from input arguments with validation&lt;/li&gt;
-  &lt;li&gt;Field-level security through annotations on data &lt;code&gt;@Controller&lt;/code&gt; methods&lt;/li&gt;
-  &lt;li&gt;Server handlers and interception over HTTP, WebSocket, and RSocket&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.querydsl.com/"&gt;Querydsl&lt;/a&gt; and &lt;a href="https://docs.spring.io/spring-data/commons/docs/current/reference/html/#query-by-example"&gt;Query by Example&lt;/a&gt; repositories as data fetchers&lt;/li&gt;
-  &lt;li&gt;Batch loading support&lt;/li&gt;
-  &lt;li&gt;Client for executing over HTTP, WebSocket, and RSocket&lt;/li&gt;
-  &lt;li&gt;Test support with HTTP, WebSocket, RSocket, or directly, without a client&lt;/li&gt;
-  &lt;li&gt;GraphiQL page and schema printing page&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Due to release today, Spring Boot 2.7 adds a Spring for GraphQL starter with auto-config goodness to declare GraphQL endpoints, GraphiQL and schema print pages, properties, callback interfaces, test support, and more. Use &lt;a href="https://start.spring.io/"&gt;Spring Initializer&lt;/a&gt; to create a GraphQL application.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve already spotted some wonderful resources from the community:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spring-petclinic/spring-petclinic-graphql"&gt;GraphQL Petclinic&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;comprehensive &lt;a href="https://www.danvega.dev/blog/2022/05/17/spring-for-graphql/"&gt;blog&lt;/a&gt;, auspiciously timed by &lt;a href="https://twitter.com/therealdanvega"&gt;Dan Vega&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;excellent batch loading &lt;a href="https://twitter.com/nilshartmann/status/1519198358556057600"&gt;video tutorial&lt;/a&gt; by &lt;a href="https://twitter.com/nilshartmann"&gt;Nils Hartman&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/graphql_java/status/1523793861356953600"&gt;book announcement&lt;/a&gt; from GraphQL Java founder &lt;a href="https://twitter.com/andimarek"&gt;Andreas Marek&lt;/a&gt;, we are looking forward to this one!&lt;/li&gt;
-  &lt;li&gt;it is also &lt;em&gt;rumored&lt;/em&gt;, the inimitable &lt;a href="https://joshlong.com/"&gt;Josh Long&lt;/a&gt; is putting the finishing touches on a multipart &lt;a href="https://joshlong.com/#youtube"&gt;Spring Tips&lt;/a&gt; video series featuring Andreas Marek and one more guest. Stay tuned on this site.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Looking forward to next week when &lt;a href="https://2022.springio.net/"&gt;Spring I/O&lt;/a&gt;, a unique conference with a strong focus on community and technical content, resumes after a 2 year hiatus. It gives us the first opportunity to present this project after its GA release and have direct interactions. GraphQL coverage features in the keynote and in a dedicated session.&lt;/p&gt;
-&lt;p&gt;As always, if you&amp;rsquo;ve taken the time to report an issue, provide feedback, test, or participate in discussions, contributing thoughts and ideas, thank you! Every little bit helps to make an open-source project stronger.&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
